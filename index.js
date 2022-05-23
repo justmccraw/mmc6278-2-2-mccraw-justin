@@ -10,9 +10,9 @@ function greet() {
     }
 
     var userAge = prompt('How old are you?')
-        parseInt(userAge)
+    var ageResult = parseInt(userAge)
 
-    var findAge = confirm('Click ok if you had a birthday so far this year')
+    var findAge = confirm('Click "Ok" if you had a birthday so far this year')
 
 
 }
