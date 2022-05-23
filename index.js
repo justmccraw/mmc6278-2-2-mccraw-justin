@@ -14,11 +14,5 @@ function greet() {
 
     var findAge = confirm('Click ok if you had a birthday so far this year')
 
-    if (findAge) {
-        alert("You must have been born in " + userAge, new Date().getFullYear())
-    } else {
-        alert("You must have been born in " + userAge + 1 + new Date().getFullYear())
-    }
-
 
 }
