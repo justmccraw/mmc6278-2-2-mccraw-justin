@@ -13,6 +13,10 @@ function greet() {
     var ageResult = parseInt(userAge)
 
     var findAge = confirm('Click "Ok" if you had a birthday so far this year')
-
-
+    
+    if(findAge) {
+        alert('You must have been born in ' + (new Date().getFullYear() - ageResult))
+    } else {
+        alert('You must have been born in ' + (new Date().getFullYear() - (ageResult + 1)))
+    }
 }
