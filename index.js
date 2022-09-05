@@ -13,6 +13,13 @@ program
   .description("Retrieves a random quote")
   .action(async () => {
     // TODO: Pull a random quote from the quotes.txt file
+    async function main () {
+      const data = await fs.readFile(QUOTE_FILE, 'utf-8')
+      console.log(data)
+    }
+
+    main()
+    
     // console log the quote and author
     // You may style the text with chalk as you wish
   });
