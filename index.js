@@ -15,7 +15,11 @@ program
     // TODO: Pull a random quote from the quotes.txt file
     async function main() {
       try {
-        const fileContents = fs.readFile(QUOTE_FILE, 'utf-8')
+        const fileContents = await fs.readFile(QUOTE_FILE, 'utf-8')
+
+        var lines = fileContents.split('\n');
+        var line = lines[Math.floor(Math.random()*lines.length)]
+
         console.log(fileContents)
       } catch(err) {
         console.log(err)
@@ -23,7 +27,6 @@ program
     }
     
     main()
-
     // console log the quote and author
     // You may style the text with chalk as you wish
   });
